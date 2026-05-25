@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eleanor Voss — Author</title>
-<meta name="description" content="Eleanor Voss — novelist, essayist, and storyteller. Explore books, short stories, and featured work.">
+<title>Niveadita Razdan — Author</title>
+<meta name="description" content="Niveadita Razdan — novelist, essayist, and storyteller. Explore books, short stories, and featured work.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -66,12 +66,15 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 .hero-sub{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--muted);margin:1rem 0 2.4rem}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 .hero-right{position:relative;overflow:hidden}
-.hero-img-wrap{position:absolute;inset:0}
+/* .hero-img-wrap{position:absolute;inset:0}
 .hero-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:sepia(10%) contrast(1.04)}
-.hero-placeholder{width:100%;height:100%;background:linear-gradient(150deg,var(--cream) 0%,var(--rule) 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:var(--muted);font-family:var(--serif);font-style:italic}
+.hero-placeholder{width:100%;height:100%;background:linear-gradient(150deg,var(--cream) 0%,var(--rule) 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:var(--muted);font-family:var(--serif);font-style:italic} */
 .hero-quote-card{position:absolute;bottom:44px;left:40px;right:40px;background:rgba(253,250,246,.92);padding:18px 22px;border-left:2px solid var(--gold);backdrop-filter:blur(6px)}
 .hero-quote-card p{font-family:var(--serif);font-style:italic;font-size:.98rem;line-height:1.55;color:var(--dark);margin:0}
-
+.hero-img-wrap{position:absolute;inset:0}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:sepia(10%) contrast(1.04)}
+.hero-placeholder{width:100%;height:100%;background:linear-gradient(150deg,var(--cream) 0%,var(--rule) 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:var(--muted);font-family:var(--serif);font-style:italic;overflow:hidden}
+.hero-placeholder img.hero-photo{width:80%;height:80%;object-fit:cover;object-position:center;display:block;margin:auto;border-radius:6px;box-shadow:0 6px 18px rgba(29,23,19,.12)}
 /* about */
 .about{background:var(--white)}
 .about-grid{display:grid;grid-template-columns:1fr 1.7fr;gap:80px;align-items:center}
@@ -198,7 +201,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 
 <!-- NAV -->
 <nav class="nav" id="nav">
-  <a href="#home" class="nav-logo">Eleanor <em>Voss</em></a>
+  <a href="#home" class="nav-logo">Niveadita <em>Razdan</em></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#books">Books</a></li>
@@ -226,7 +229,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 <section class="hero" id="home">
   <div class="hero-left">
     <span class="hero-eyebrow">Author &amp; Storyteller</span>
-    <h1 class="hero-name">Eleanor<br><em>Voss</em></h1>
+    <h1 class="hero-name">Niveadita<br><em>Razdan</em></h1>
     <p class="hero-sub">Novelist · Essayist · Storyteller</p>
     <div class="hero-actions">
       <a href="#books" class="btn btn-dark">Explore Books</a>
@@ -238,13 +241,15 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
       <!--
         TO ADD YOUR PHOTO:
         Replace the placeholder div below with:
-        <img src="your-photo.jpg" alt="Eleanor Voss">
+        <img src="your-photo.jpg" alt="Niveadita Razdan">
       -->
       <div class="hero-placeholder">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".8" opacity=".3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        <span style="font-size:.9rem">Author photo</span>
-        <span style="font-size:.75rem;opacity:.6">Replace placeholder in HTML</span>
+        <img src="nivi.jpg" alt="Niveadita Razdan" class="hero-photo">
       </div>
+      <!-- <div class="hero-placeholder">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".8" opacity=".3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span style="font-size:.9rem"></span>
+      </div> -->
     </div>
     <div class="hero-quote-card">
       <p>"Stories are the way we make sense of the world — and the way we make sense of ourselves."</p>
@@ -260,21 +265,22 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
         <span class="label">By the Numbers</span>
         <div class="rule"></div>
         <div class="stats">
-          <div class="stat"><span class="stat-n">12</span><span class="stat-l">Books</span></div>
-          <div class="stat"><span class="stat-n">40+</span><span class="stat-l">Short Stories</span></div>
-          <div class="stat"><span class="stat-n">7</span><span class="stat-l">Awards</span></div>
-          <div class="stat"><span class="stat-n">18</span><span class="stat-l">Years Writing</span></div>
+          <div class="stat"><span class="stat-n">1</span><span class="stat-l">Books</span></div>
+          <div class="stat"><span class="stat-n">18+</span><span class="stat-l">Short Stories</span></div>
+          <div class="stat"><span class="stat-n">3</span><span class="stat-l">Featured Work</span></div>
+          <div class="stat"><span class="stat-n">2</span><span class="stat-l">Years Writing</span></div>
         </div>
       </div>
       <div class="about-text">
         <span class="label">About the Author</span>
-        <h2>Eleanor Voss</h2>
+        <h2>Niveadita Razdan</h2>
         <div class="rule"></div>
-        <p>I write about the spaces between things — the pause before a word is spoken, the moment before a decision changes everything. My work explores ordinary lives cracked open by grief, desire, and the quiet persistence of hope.</p>
-        <p>My novels have been translated into fourteen languages and published across three continents. I've taught at the Iowa Writers' Workshop, the Bread Loaf Conference, and the Tin House Summer Workshop. I live in the Pacific Northwest with too many notebooks and not enough shelf space.</p>
-        <p>Before turning to fiction full-time, I was a journalist and briefly a cartographer — an occupation that, I've decided, was simply early training for the map-making that novels require.</p>
+          <p>I’ve always been fascinated by the stories families tell themselves, the carefully edited versions of events that get passed down through generations, the silences that speak louder than words, the small betrayals and great loves that shape who we become. I write fiction that explores these hidden landscapes of memory and belonging.</p>
+          <p>My debut novel, The House on Gulmohar Lane, is my first published book, a culmination of all these themes I’ve been exploring in my shorter work. My fiction has also appeared in various publications and I regularly write essays about the craft of storytelling on Medium, where I explore everything from literary misdirection to the peculiar magic of late-night writing sessions. I believe the best stories don’t just entertain, they help us see ourselves and our world with a little more clarity, a little more compassion.</p>
+          <p>Before I became a full-time writer, I worked on projects that required a different kind of storytelling, data analysis, problem-solving, mapping vulnerabilities and patterns. That analytical background still influences how I approach character and plot: I’m interested in the architecture of story, in building narratives that reveal themselves slowly, layer by layer.</p>
+          <p>I write late at night, usually with tea going cold beside me. I believe in the power of imperfect first drafts, in the importance of getting words on the page even when they feel wrong. I’m endlessly curious about what makes a story work, what makes a character breathe, what makes a reader turn the page.</p>
         <a href="#books" class="btn btn-dark" style="margin-top:8px">Explore My Work</a>
-        <span class="signature">Eleanor Voss</span>
+        <span class="signature">Niveadita Razdan</span>
       </div>
     </div>
   </div>
@@ -290,61 +296,20 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 
       <div class="book-card fade-target">
         <div class="book-cover">
-          <!-- Replace with: <img src="cover1.jpg" alt="The Weight of Small Things"> -->
-          <div class="bca" style="background:#d6cfc4">
-            <span class="bca-title">The Weight of Small Things</span>
-            <span class="bca-author">Eleanor Voss</span>
-          </div>
+          <img src="hogl.jpg" alt="The House on Gulmohar Lane">
         </div>
-        <div class="book-tag">Literary Fiction</div>
-        <div class="book-title">The Weight of Small Things</div>
-        <div class="book-year">2023</div>
-        <p class="book-blurb">A grief-stricken archivist discovers letters that rewrite her understanding of her mother's life — and her own.</p>
-        <a href="#" class="btn btn-ghost" style="margin-top:14px;font-size:.68rem">Order Now</a>
-      </div>
-
-      <div class="book-card fade-target">
-        <div class="book-cover">
-          <div class="bca" style="background:#c8bfb0">
-            <span class="bca-title">Cartography of Absence</span>
-            <span class="bca-author">Eleanor Voss</span>
-          </div>
+        <div class="book-content">
+          <div class="book-tag">Fiction</div>
+          <div class="book-title">The House on Gulmohar Lane</div>
+          <div class="book-year">2025</div>
+          <p class="book-blurb">A sweeping multi-generational family saga set in a house built by a British officer in the 1950s. <br/> Follow the residents of the house across three generations as protagonist Tara returns home to confront her past and uncover the carefully guarded secrets that have shaped her family.<br/></p>
+          <center>
+            <div class="book-actions">
+            <a href="#" class="btn btn-ghost" style="font-size:.68rem">Order Now</a>
+            </div>
+          </center>
         </div>
-        <div class="book-tag">Short Stories</div>
-        <div class="book-title">Cartography of Absence</div>
-        <div class="book-year">2021</div>
-        <p class="book-blurb">Fifteen stories mapping the territory of loss — intimate, exact, and quietly devastating.</p>
-        <a href="#" class="btn btn-ghost" style="margin-top:14px;font-size:.68rem">Order Now</a>
       </div>
-
-      <div class="book-card fade-target">
-        <div class="book-cover">
-          <div class="bca" style="background:#e8dfd2">
-            <span class="bca-title">Before the Reckoning</span>
-            <span class="bca-author">Eleanor Voss</span>
-          </div>
-        </div>
-        <div class="book-tag">Novel</div>
-        <div class="book-title">Before the Reckoning</div>
-        <div class="book-year">2019</div>
-        <p class="book-blurb">Three sisters return to their childhood home and must confront the secret that kept them apart for decades.</p>
-        <a href="#" class="btn btn-ghost" style="margin-top:14px;font-size:.68rem">Order Now</a>
-      </div>
-
-      <div class="book-card fade-target">
-        <div class="book-cover">
-          <div class="bca" style="background:#ddd4c6">
-            <span class="bca-title">Still Water</span>
-            <span class="bca-author">Eleanor Voss</span>
-          </div>
-        </div>
-        <div class="book-tag">Debut Novel</div>
-        <div class="book-title">Still Water</div>
-        <div class="book-year">2016</div>
-        <p class="book-blurb">A luminous debut about a marine biologist who returns to the island town she fled at seventeen.</p>
-        <a href="#" class="btn btn-ghost" style="margin-top:14px;font-size:.68rem">Order Now</a>
-      </div>
-
     </div>
   </div>
 </section>
@@ -352,7 +317,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 <!-- STORIES -->
 <section class="stories sec" id="stories">
   <div class="wrap">
-    <span class="label">Short Fiction</span>
+    <span class="label">Fiction</span>
     <h2>Short Stories</h2>
     <div class="rule"></div>
     <div class="stories-list">
@@ -360,53 +325,32 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
       <div class="story fade-target">
         <div class="story-num">01</div>
         <div>
-          <h3 class="story-name">The Last Cartographer</h3>
-          <div class="story-meta"><span class="pub">The New Yorker</span><span>2024</span><span>4,200 words</span></div>
-          <p class="story-blurb">An elderly man who drew maps for a living must guide his estranged daughter across a city he no longer recognises — or trusts.</p>
+          <h3 class="story-name">The House Remembers</h3>
+          <div class="story-meta"><span class="pub">Reedsy</span><span>2026</span><span>Love is in the Air</span></div>
+          <!-- <p class="story-blurb">An elderly man who drew maps for a living must guide his estranged daughter across a city he no longer recognises — or trusts.</p> -->
         </div>
-        <a href="#" class="story-link">Read →</a>
+        <a href="https://reedsy.com/short-story/hdh8km/" class="story-link" target="_blank">Read →</a>
       </div>
 
       <div class="story fade-target">
         <div class="story-num">02</div>
         <div>
-          <h3 class="story-name">Small Ceremonies</h3>
-          <div class="story-meta"><span class="pub">Granta</span><span>2023</span><span>3,800 words</span><span style="color:var(--gold)">★ Pushcart Nominee</span></div>
-          <p class="story-blurb">A woman returns her late husband's library books — one per week, for a year — and strikes up an unlikely friendship with the librarian.</p>
+          <h3 class="story-name">The Visting Hours</h3>
+          <div class="story-meta"><span class="pub">Reedsy</span><span>2026</span><span>Echoes of the Past</span></div>
+          <!-- <p class="story-blurb">Mystery . Speculative</p> -->
         </div>
-        <a href="#" class="story-link">Read →</a>
+        <a href="https://reedsy.com/short-story/as191d/" class="story-link" target="_blank">Read →</a>
       </div>
 
       <div class="story fade-target">
         <div class="story-num">03</div>
         <div>
-          <h3 class="story-name">The Interpreter's Garden</h3>
-          <div class="story-meta"><span class="pub">Paris Review</span><span>2022</span><span>5,100 words</span></div>
-          <p class="story-blurb">A UN interpreter who translates other people's words for a living finds herself without language when her brother is arrested.</p>
+          <h3 class="story-name">Crystalline</h3>
+          <div class="story-meta"><span class="pub">Reedsy</span><span>2026</span><span>Brewed Awakening</span></div>
+          <!-- <p class="story-blurb">A UN interpreter who translates other people's words for a living finds herself without language when her brother is arrested.</p> -->
         </div>
-        <a href="#" class="story-link">Read →</a>
+        <a href="https://reedsy.com/short-story/n9k7st/" class="story-link" target="_blank">Read →</a>
       </div>
-
-      <div class="story fade-target">
-        <div class="story-num">04</div>
-        <div>
-          <h3 class="story-name">Everything We Kept</h3>
-          <div class="story-meta"><span class="pub">Tin House</span><span>2021</span><span>2,900 words</span></div>
-          <p class="story-blurb">Two women go through their mother's belongings and discover she had been leading a life they knew nothing about.</p>
-        </div>
-        <a href="#" class="story-link">Read →</a>
-      </div>
-
-      <div class="story fade-target">
-        <div class="story-num">05</div>
-        <div>
-          <h3 class="story-name">Letter to an Unnamed Country</h3>
-          <div class="story-meta"><span class="pub">n+1</span><span>2020</span><span>6,400 words</span><span style="color:var(--gold)">★ Best American Short Stories</span></div>
-          <p class="story-blurb">A series of unsent letters between two people who met only once, at a border crossing, and never saw each other again.</p>
-        </div>
-        <a href="#" class="story-link">Read →</a>
-      </div>
-
     </div>
   </div>
 </section>
@@ -418,51 +362,61 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
     <h2>Featured Work</h2>
     <div class="rule"></div>
     <div class="feat-grid">
-
-      <div class="feat-item gold-card fade-target">
-        <span class="feat-award">★ Editor's Choice — The Atlantic</span>
-        <div class="feat-pub" style="color:var(--white)">The Atlantic</div>
-        <h3 class="feat-title" style="color:var(--white)">On Writing Grief Without Sentimentality</h3>
-        <p class="feat-blurb" style="color:rgba(255,255,255,.85)">An essay on the craft of approaching loss on the page — and why restraint is its own kind of courage.</p>
-        <div class="feat-yr" style="color:rgba(255,255,255,.65)">2024</div>
+      <div class="feat-item fade-target">
+        <div class="feat-pub">Chicken Soup for the Soul</div>
+        <h3 class="feat-title">A Diwali Girl’s First American Christmas</h3>
+        <p class="feat-blurb">It’s a humorous essay about finding the universal magic in both festivals of light.</p>
+        <a href="https://www.chickensoup.com/book/the-spirit-of-christmas" target="_blank">Order →</a>
+        <div class="feat-yr">2025</div>
       </div>
 
       <div class="feat-item fade-target">
-        <div class="feat-pub">Literary Hub</div>
-        <h3 class="feat-title">The Problem With the Unreliable Narrator</h3>
-        <p class="feat-blurb">Why a technique beloved by critics often fails readers — and what to do instead.</p>
-        <div class="feat-yr">2023</div>
+        <div class="feat-pub">Writer’s Digest</div>
+        <h3 class="feat-title">Literary Misdirection: Using Reader Expectations Against Them</h3>
+        <p class="feat-blurb">An in-depth article on the craft of literary misdirection and creating compelling character-driven mysteries that keep readers guessing until the final page.</p>
+        <a href="https://www.writersdigest.com/literary-misdirection-using-reader-expectations-against-them" target="_blank">Read →</a>
+        <div class="feat-yr">2025</div>
       </div>
 
       <div class="feat-item fade-target">
-        <span class="feat-award">NPR Best of the Year</span>
-        <div class="feat-pub">Granta</div>
-        <h3 class="feat-title">In Praise of Slow Reading</h3>
-        <p class="feat-blurb">A personal essay on reading as a form of attention — and why speed-reading is its own kind of violence.</p>
-        <div class="feat-yr">2023</div>
+        <div class="feat-pub">Illumination</div>
+        <h3 class="feat-title">From Dreaming to Doing: The Truth About Writing Your First Book</h3>
+        <p class="feat-blurb">Because Having a Story Isn’t the Same as Writing One</p>
+        <a href="https://medium.com/illumination/from-dreaming-to-doing-the-truth-about-writing-your-first-book-0b471531c091" target="_blank">Read →</a>
+        <div class="feat-yr">2025</div>
       </div>
 
       <div class="feat-item fade-target">
-        <div class="feat-pub">The Guardian</div>
-        <h3 class="feat-title">My Year of Reading Only Women</h3>
-        <p class="feat-blurb">What happened when I spent twelve months reading nothing but books by women writers from forty countries.</p>
-        <div class="feat-yr">2022</div>
+        <div class="feat-pub">Illumination</div>
+        <h3 class="feat-title">The Art of Creating Characters That Feel Real: A Writer’s Journey</h3>
+        <p class="feat-blurb">A practical guide to crafting characters your readers won’t forget</p>
+        <a href="https://medium.com/illumination/the-art-of-creating-characters-that-feel-real-a-writers-journey-82f669c6141d" target="_blank">Read →</a>
+        <div class="feat-yr">2025</div>
       </div>
 
       <div class="feat-item fade-target">
-        <div class="feat-pub">The New York Times</div>
-        <h3 class="feat-title">The Notebooks I Never Finished</h3>
-        <p class="feat-blurb">On incompleteness as a creative practice — and the notebooks I've started and abandoned over eighteen years.</p>
-        <div class="feat-yr">2022</div>
+        <div class="feat-pub">Illumination</div>
+        <h3 class="feat-title">The Dream Factory: How Your Sleeping Brain Becomes Fiction’s Most Innovative Storyteller</h3>
+        <p class="feat-blurb">While you sleep, your mind orchestrates plot twists that would make Hollywood jealous</p>
+        <a href="https://medium.com/illumination/the-dream-factory-how-your-sleeping-brain-becomes-fictions-most-innovative-storyteller-09da2fde94b9" target="_blank">Read →</a>
+        <div class="feat-yr">2025</div>
       </div>
 
       <div class="feat-item fade-target">
-        <div class="feat-pub">Paris Review</div>
-        <h3 class="feat-title">What Cartography Taught Me About Character</h3>
-        <p class="feat-blurb">Before I was a novelist, I made maps. The discipline changed how I think about the shape of a story.</p>
-        <div class="feat-yr">2021</div>
+        <div class="feat-pub">Illumination</div>
+        <h3 class="feat-title">From Pantser to Plotter: My 8-Week Writing Experiment</h3>
+        <p class="feat-blurb">How I wrote 97,398 words in two months by challenging everything I thought I knew about my writing process</p>
+        <a href="https://medium.com/illumination/from-pantser-to-plotter-my-8-week-writing-experiment-04a448c105f2" target="_blank">Read →</a>
+        <div class="feat-yr">2025</div>
       </div>
 
+      <div class="feat-item fade-target">
+        <div class="feat-pub">Illumination</div>
+        <h3 class="feat-title">Reality TV Story Generator: Transform Guilty Pleasures into Creative Gold</h3>
+        <p class="feat-blurb">Because Your Netflix Binge-Watching Can Actually Lead to Something Brilliant</p>
+        <a href="https://medium.com/illumination/reality-tv-story-generator-transform-guilty-pleasures-into-creative-gold-dd90aab8df76" target="_blank">Read →</a>
+        <div class="feat-yr">2025</div>
+      </div>
     </div>
   </div>
 </section>
@@ -470,47 +424,28 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 <!-- PRESS -->
 <section class="press sec" id="press">
   <div class="wrap">
-    <span class="label" style="text-align:center;display:block">Critical Praise</span>
+    <span class="label" style="text-align:center;display:block">Reviews</span>
     <h2 style="text-align:center">What They're Saying</h2>
     <div class="rule rule-c"></div>
     <div class="press-grid">
 
       <div class="press-card fade-target">
-        <p class="press-q">A luminous, disquieting debut from a writer who understands that the best fiction operates at the level of whisper, not shout.</p>
-        <div class="press-src">The New York Times Book Review</div>
-        <div class="press-pub">Review of <em>Still Water</em></div>
+        <p class="press-q">This is truly the best book by an Indian author I have read so far in my journey of reading 380 books. Loved the concept. Beautifully written. I highly recommend this book.😊</p>
+        <div class="press-src">Amazon Review by Sneha Gupta</div>
+        <div class="press-pub">Review of <em>The House on Gulmohar Lane</em></div>
       </div>
 
       <div class="press-card fade-target">
-        <p class="press-q">Voss writes with a precision that feels almost surgical — and yet every page breathes with warmth. She is the real thing.</p>
-        <div class="press-src">The Guardian</div>
-        <div class="press-pub">Best Books of the Year, 2023</div>
+        <p class="press-q">The House on Gulmohar Lane by Niveadita Razdan is a stunning work of fiction that beautifully captures the non-living thing's perspective. Razdan’s storytelling feels both intimate and expansive as each page steeped in emotion, atmosphere, and quiet revelation. The characters are drawn with empathy and realism, and the titular house becomes a living, breathing metaphor! <br/> With prose that’s lyrical yet effortless, this novel pulls you in gently and refuses to let go. A rare gem that stays with you long after you’ve turned the final page — a triumph of heart, craft, and imagination.</p>
+        <div class="press-src">Goodreads Review by Shivam</div>
+        <div class="press-pub">Review of <em>The House on Gulmohar Lane</em></div>
       </div>
 
       <div class="press-card fade-target">
-        <p class="press-q">These stories are perfect small machines. You step inside one and it takes you somewhere you never expected to go.</p>
-        <div class="press-src">Esquire</div>
-        <div class="press-pub">Review of <em>Cartography of Absence</em></div>
+        <p class="press-q">There’s so much truth here. The quiet adjustments, the unspoken losses, the silent grieving for plans set aside — they all deserve to be acknowledged. Women are often praised for their resilience without anyone noticing what they had to sacrifice to keep everything together.</p>
+        <div class="press-src">Response by Cole</div>
+        <div class="press-pub">Unspoken Resilience: The Hidden Cost of Women’s Adaptability</div>
       </div>
-
-      <div class="press-card fade-target">
-        <p class="press-q">No living writer understands silence — its textures and its dangers — quite the way Eleanor Voss does.</p>
-        <div class="press-src">The Paris Review</div>
-        <div class="press-pub">On <em>The Weight of Small Things</em></div>
-      </div>
-
-      <div class="press-card fade-target">
-        <p class="press-q">She has an uncanny ability to locate the exact moment a life pivots — and to make that moment feel both inevitable and impossible.</p>
-        <div class="press-src">The Atlantic</div>
-        <div class="press-pub">2021 Fiction Roundup</div>
-      </div>
-
-      <div class="press-card fade-target">
-        <p class="press-q">An essential voice in contemporary fiction. A novel you read twice: once to find out what happens, once to understand how she did it.</p>
-        <div class="press-src">NPR Books</div>
-        <div class="press-pub">Best of the Year</div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -520,7 +455,6 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
   <div class="wrap">
     <span class="label" style="display:block;text-align:center">Stay in Touch</span>
     <h2>Letters from the Writing Desk</h2>
-    <p class="nl-sub">Occasional dispatches: new work, reading recommendations, and notes on the craft. No more than once a month.</p>
     <form class="nl-form" id="nl-form">
       <input type="email" id="nl-email" placeholder="Your email address" required aria-label="Email address">
       <button type="submit" id="nl-btn">Subscribe</button>
@@ -533,7 +467,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <span class="footer-brand-name">Eleanor Voss</span>
+      <span class="footer-brand-name">Niveadita Razdan</span>
       <p>Novelist · Essayist · Storyteller</p>
       <p style="margin-top:10px">For rights enquiries, speaking invitations, and appearances, please get in touch via email.</p>
     </div>
@@ -543,7 +477,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
         <li><a href="#books">All Books</a></li>
         <li><a href="#stories">Short Stories</a></li>
         <li><a href="#featured">Essays &amp; Features</a></li>
-        <li><a href="#press">Press</a></li>
+        <li><a href="#press">Reviews</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -551,13 +485,13 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#newsletter">Newsletter</a></li>
-        <li><a href="mailto:hello@eleanoryvoss.com">Contact</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Goodreads</a></li>
+        <li><a href="mailto:niveaditar@gmail.com">Contact</a></li>
+        <li><a href="https://www.goodreads.com/author/show/55690030.Niveadita_Razdan" target="_blank" rel="noopener">Goodreads</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2026 Eleanor Voss. All rights reserved.</span>
+    <span>&copy; 2026 Niveadita Razdan. All rights reserved.</span>
     <div class="socials">
       <a href="#" target="_blank" rel="noopener">Twitter</a>
       <a href="#" target="_blank" rel="noopener">Instagram</a>
